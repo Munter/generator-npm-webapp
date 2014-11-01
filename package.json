@@ -1,0 +1,52 @@
+{
+  "name": "generator-npm-webapp",
+  "version": "0.0.0",
+  "description": "A full and clean frontend web workflow Yeoman generator with npm as task runner. Simple configuration, powerful preprocessing and image pipeline, livereload and a highly optimized production build output",
+  "keywords": [
+    "yeoman-generator",
+    "web",
+    "app",
+    "front-end",
+    "h5bp",
+    "assetgraph",
+    "livereload",
+    "imagepipeline"
+  ],
+  "homepage": "https://github.com/Munter/generator-npm-webapp",
+  "bugs": "https://github.com/Munter/generator-npm-webapp/issues",
+  "author": {
+    "name": "Peter Müller",
+    "email": "munter@fumle.dk",
+    "url": "https://github.com/Munter"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Munter/generator-npm-webapp.git"
+  },
+  "scripts": {
+    "lint": "jshint .",
+    "test": "npm run jshint && mocha",
+    "travis": "npm test"
+  },
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "yeoman-generator": "^0.17.7",
+    "yosay": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.4"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-npm-webapp' ]; then cd .. && eval "mv $currentfolder generator-npm-webapp" && cd generator-npm-webapp; fi
+
+script: "npm run-script travis"
+
+#after_success: "<coverage/lcov.info ./node_modules/coveralls/bin/coveralls.js"

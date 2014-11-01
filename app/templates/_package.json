@@ -1,0 +1,30 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "version": "0.0.0",
+  "devDependencies": {
+    "jshint": "latest",
+
+    "livestyle": "latest",
+    "autoprefixer": "latest",
+    "node-sass": "latest",
+    "less": "latest",
+
+    "assetgraph-builder": "latest",
+    "svgo": "latest",
+
+    "mocha": "latest",
+    "mocha-lcov-reporter": "latest",
+    "istanbul": "latest",
+    "coveralls": "latest",
+    "unexpected": "latest"
+  },
+  "scripts": {
+    "serve": "livestyle -r app -p 9000 --autoprefixer --compilesass --compiless --processimage --watchhtml --watchcssimages",
+    "serve:dist": "livestyle -r dist -p 9001 --dead",
+    "build": "rm -rf dist && buildProduction --root app --outroot dist --optimizeimages app/*.html app/*.txt app/*.ico",
+    "lint": "jshint .",
+    "test": "npm run lint && mocha",
+    "coverage": "NODE_ENV=development ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --reporter dot",
+    "travis": "npm run lint && npm run coverage"
+  }
+}
