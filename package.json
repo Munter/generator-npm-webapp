@@ -1,6 +1,6 @@
 {
   "name": "generator-npm-webapp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A full and clean frontend web workflow Yeoman generator with npm as task runner. Simple configuration, powerful preprocessing and image pipeline, livereload and a highly optimized production build output",
   "keywords": [
     "yeoman-generator",
