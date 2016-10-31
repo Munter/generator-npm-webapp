@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - '0.10'
+  - 6
 before_install:
   - currentfolder=${PWD##*/}
   - if [ "$currentfolder" != 'generator-npm-webapp' ]; then cd .. && eval "mv $currentfolder generator-npm-webapp" && cd generator-npm-webapp; fi
